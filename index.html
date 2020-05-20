@@ -43,29 +43,35 @@ h1 {
     font-weight: 100;
 }
 
-h2 {
+h2.about {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-bottom: 10vh;
+}
+
+h2.navigation, h2.section {
     font-weight: 400;
     font-size: 1.2em;
     margin-top: 4vh;
     font-family: "Fira Sans", "Avenir Next", Helvetica, Arial, sans-serif;
 }
 
-h2 > a:link, h2 > a:visited {
+h2.navigation > a:link, h2.navigation > a:visited {
     text-decoration: none;
     color: black;
 }
 
-h2 > a:hover {
+h2.navigation > a:hover {
     text-decoration: underline;
     color: #06f;
 }
 
-h2 > a:active {
+h2.navigation > a:active {
     color: #08f;
 }
 
 .coverage {
-    margin-top: 4vh;
+    margin-top: 10vh;
     padding: 1px 10vw 2em;
     position: relative;
 }
@@ -148,12 +154,15 @@ a.article:active {
 
     <div class="intro">
         <h1 class="name"><span class="zinn">Zinn</span> <span class="labs">labs</span></h1>
-        <h2 class="subtitle"><a href="about/">about the team</a></h2>
-        <h2 class="subtitle"><a href="progress/">contact and updates</a></h2>
+        <h2 class="about">
+            focus tunable optics, eye tracking, and depth estimation for vision
+        </h2>
+        <h2 class="navigation"><a href="about/">about the team</a></h2>
+        <h2 class="navigation"><a href="progress/">contact and updates</a></h2>
     </div>
 
     <div class="coverage">
-        <h2>news and media</h2>
+        <h2 class="section">news and media</h2>
         <div class="yt_container">
             <iframe src="https://www.youtube.com/embed/iAknMPnn_V8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="yt_video"></iframe>
         </div>
