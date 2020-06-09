@@ -55,12 +55,12 @@ h2.about {
 }
 
 .navigation a:hover {
-    background: #ddd;
+    background: rgba(0,0,0,0.12);
     color: #06f;
 }
 
 .navigation a:active {
-    background: #ccc;
+    background: rgba(0,0,0,0.2);
     color: #08f;
 }
 
@@ -127,12 +127,12 @@ a.article:link, a.article:visited {
 }
 
 a.article:hover {
-    background: #ddd;
+    background: rgba(0,0,0,0.12);
     color: #06f;
 }
 
 a.article:active {
-    background: #ccc;
+    background: rgba(0,0,0,0.2);
     color: #08f;
 }
 
