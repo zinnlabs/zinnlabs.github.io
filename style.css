@@ -35,6 +35,14 @@ h1 {
     font-weight: 100;
 }
 
+.tm {
+    font-weight: 400;
+    font-size: 20%;
+    vertical-align: text-top;
+    position: relative;
+    top: 1em;
+}
+
 h2.about {
     font-weight: 400;
     font-size: 1.5em;
