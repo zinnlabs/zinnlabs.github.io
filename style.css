@@ -7,10 +7,12 @@ body {
     margin: auto 0;
     text-align: center;
     font-family: "Fira Sans", "Avenir Next", Helvetica, Arial, sans-serif;
+    background-image: url('bg_texture.png');
 }
 
 .intro {
     min-height: 95vh;
+    box-shadow: inset #777 0 25vh 25vh -25vh;
 }
 
 h1, h2 {
@@ -221,11 +223,7 @@ a.article:active {
     color: #08f;
 }
 
-#particles-js {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100vh;
-    width: 100vw;
+.footer .copysymb {
+    position: relative;
+    top: 0.11em;
 }
