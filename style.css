@@ -8,10 +8,23 @@ body {
     text-align: center;
     font-family: "Fira Sans", "Avenir Next", Helvetica, Arial, sans-serif;
     background-image: url('bg_texture.png');
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body > div {
+    flex: 1;
 }
 
 .intro {
     min-height: 95vh;
+    box-shadow: inset #777 0 100px 100px -100px;
+}
+
+.subpage .intro {
+    min-height: auto;
     box-shadow: inset #777 0 100px 100px -100px;
 }
 
@@ -25,6 +38,11 @@ h1 {
     padding-top: 30vh;
     font-size: 6em;
     font-family: "Fira Sans Extra Condensed", "Avenir Next Condensed", Helvetica, Arial, sans-serif;
+}
+
+.subpage h1 {
+    padding-top: 5vh;
+    font-size: 4em;
 }
 
 .zinn {
@@ -81,6 +99,12 @@ h2.about {
 .section {
     position: relative;
     margin-top: 4em;
+}
+
+.subpage .section {
+    position: relative;
+    margin-top: 0;
+    padding: 4em 10vw 0;
 }
 
 .section::before {
@@ -203,15 +227,34 @@ a.article:active {
     display: none;
 }
 
+.listing {
+    text-align: left;
+    margin: 0 auto 5em auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.listing p {
+    margin: auto 1em 1em 1em;
+    max-width: 40em;
+}
+
 .footer {
     font-weight: 300;
     font-size: 0.9em;
     box-shadow: inset #777 0 -60px 50px -75px;
     margin: 0;
     padding: 30px 0 1px 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
 }
 
-.footer a:link, .footer a:visited {
+.footer a:link,
+.footer a:visited,
+.listing a:link,
+.listing a:visited {
     color: #06f;
 }
 
@@ -219,7 +262,8 @@ a.article:active {
     text-decoration: underline;
 }
 
-.footer a:active {
+.footer a:active,
+.listing a:active {
     color: #08f;
 }
 
