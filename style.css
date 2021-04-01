@@ -40,6 +40,18 @@ h1 {
     font-family: "Fira Sans Extra Condensed", "Avenir Next Condensed", Helvetica, Arial, sans-serif;
 }
 
+.intro .logo {
+    padding-top: calc(30vh + 30px);
+    padding-bottom: 1.5em;
+    width: 400px;
+}
+
+.subpage .intro .logo {
+    padding-top: calc(5vh + 15px);
+    padding-bottom: 1em;
+    width: 200px;
+}
+
 .subpage h1 {
     padding-top: 5vh;
     font-size: 4em;
