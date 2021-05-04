@@ -247,7 +247,7 @@ a.article:active {
     width: fit-content;
 }
 
-.listing p {
+.listing p, .listing ul {
     margin: auto 1em 1em 1em;
     max-width: 40em;
 }
