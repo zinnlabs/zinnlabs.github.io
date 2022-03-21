@@ -186,19 +186,16 @@ a.article:active {
     width: 100%;
 }
 
+.people {
+    margin: 8vh 15vw 0;
+}
+
 .person {
-    margin: 8vh 0;
     display: inline-block;
-    padding: 0 10px 1em 10px;
+    padding: 0 2vw 1em;
     border-radius: 10px;
     vertical-align: top;
     transition: background 500ms;
-}
-
-@media screen and (max-width: 700px) {
-    .person {
-        font-size: 0.8em;
-    }
 }
 
 .name {
@@ -228,7 +225,34 @@ a.article:active {
 
 .person > img {
     border-radius: 100%;
-    width: 14.5vw;
+    width: 18vw;
+}
+
+@media screen and (max-width: 700px) {
+    .person {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .person .title {
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .people {
+        margin: 8vh auto 0;
+        width: 1000px;
+    }
+
+    .person {
+        padding: 0 30px 1em;
+    }
+
+    .person > img {
+        width: 270px;
+    }
 }
 
 .contact {
